@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* 입력 영역 */
+#input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* 목록 */
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+/* 할 일 텍스트 */
+#todo-list li span {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* 완료된 항목 */
+#todo-list li.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* 버튼 색상 */
+.btn-done   { background-color: #2196F3; }
+.btn-edit   { background-color: #FF9800; }
+.btn-delete { background-color: #f44336; }

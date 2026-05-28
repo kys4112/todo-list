@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>할 일 목록</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>📝 할 일 목록</h1>
+
+  <!-- 할 일 입력창 -->
+  <div id="input-area">
+    <input
+      type="text"
+      id="todo-input"
+      placeholder="할 일을 입력하세요"
+      onkeydown="handleKeyDown(event)"
+    />
+    <button onclick="addTodo()">추가</button>
+  </div>
+
+  <!-- 할 일 목록 출력 영역 -->
+  <ul id="todo-list"></ul>
+  <button onclick="clearDone()">완료 항목 삭제</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
